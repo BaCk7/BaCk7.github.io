@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js"> <!--<![endif]-->
 <head>
 
    <!--- Basic Page Needs
@@ -22,6 +22,7 @@
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/flags.css">
 
    <!-- Script
    ================================================== -->
@@ -47,15 +48,31 @@
 
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">Chi sono</a></li>
-	         <li><a class="smoothscroll" href="#resume">CV</a></li>
-             <!--<li><a class="smoothscroll" href="#pubbications">Pubblicazioni</a></li>-->
+            <li><a class="smoothscroll" href="#about"><span lang="it">Chi sono </span><span lang="en">About</span></a></li>
+	         <li><a class="smoothscroll" href="#resume"><span lang="it">Esperienze</span><span lang="en">Experience</span></a></li>
+            <li><a class="smoothscroll" href="#pubs"><span lang="it">Pubblicazioni</span><span lang="en">Publications</span>  </a></li>
 
-            <li><a class="smoothscroll" href="#portfolio">Progetti</a></li>
-            <!--<li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>-->
+            <li><a class="smoothscroll" href="#portfolio"><span lang="it">Progetti</span><span lang="en">Projects </span></a></li>
+            <li>
+               <!--<a>
+                  <span lang="it">Lingue: </span>
+                  <span lang="en">Language: </span>
+               </a> -->
+               <button class="buttonMenu" lang="en" onclick="changeLanguageButton('it')"><i class="it flag"></i>Versione italiana</button>
+               <button class="buttonMenu" lang="it" onclick="changeLanguageButton('en')"><i class="uk flag"></i>English version</button>    
+            </li>
             <!--<li><a class="smoothscroll" href="#contact">Contact</a></li>-->
+            
          </ul> <!-- end #nav -->
 
+         <!--<span lang="it"></span><span lang="en"></span>-->
+         <!--<div style="float:right; position: absolute; top:0px; right:0px;">
+         <select onchange="changeLanguage()" class="selectpicker" data-width="fit">
+           <option value="it" onclick="changeLanguage('it')">Italian</option>
+           <option selected value="en" onclick="changeLanguage('en')">English</option>
+         </select>           
+
+         </div>-->
       </nav> <!-- end #nav-wrap -->
 	
 	<div id="particles-js" style="position: absolute; width: 100%; height:100%; z-index: 1; background-color: none; top:0;"></div>
@@ -64,11 +81,17 @@
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">Ciao, sono Cheick.</h1>
-            <h3>Sono un <span>laureato in Informatica</span>, <br> interessato a <span>Data Science</span>, <span>Network Analysis</span> e <span>Web Design</span>. 
-            	<!--<br> Let's <a class="smoothscroll" href="#about">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>-->
-            <hr />
+               <h1 class="responsive-headline"> <span lang="it">Ciao, sono Cheick.</span><span lang="en"> Hi, I'm Cheick.</span></h1>
+               <span lang="it">
+
+                  <h3>Sono un <span>laureato in Informatica</span>, <br> interessato a <span>Data Science</span>, <span>Network Analysis</span> e <span>Web Design</span>. </h3>
+               </span>
+
+               <span lang="en">
+                  <h3>I'm a Milan based <span> Computer science graduate</span>, interested in <span>data science</span>, <span>network analysis</span> and <span>web design</span>.</h3>
+               </span>
+
+            <hr/>
             <!--<ul class="social">
                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -106,21 +129,30 @@
 
          <div class="nine columns main-col">
 
-            <h2>Chi sono</h2>
+            <h2><span lang="it">Chi sono</span><span lang="en"> About me</span></h2>
 
-            <p>Dottorando in Informatica presso Università degli studi Milano. <br>
+            <p>
+               <span lang="it">Dottorando in Informatica presso Università degli studi Milano. <br>
             	La mia attività di ricerca svolta durante gli studi ha portato a diverse pubblicazioni, principalmente in campo Big data, Network Analysis, Bioinformatica. <br>
             	Ho esperienza nella didattica maturata come esercitatore, tutor e attività di volontariato (aiuto studio).
+               </span>
+
+               <span lang="en">Hardworking and people-oriented Ph.D. student in Computer Science at Università degli studi di Milano Statale.<br>
+               Research and programming activities have led to several
+               projects and publications, mainly in the fields of big data
+               analysis, network analysis, bioinformatics.<br>
+               My experience as a teaching assistant, private tutor and
+               volunteer developed my teaching and training skills.</span>
             </p>
 
             <div class="row">
 
                <div class="columns contact-details">
 
-                  <h2>Contatti</h2>
+                  <h2><span lang="it">Contatti</span><span lang="en"></span></h2>
                   <p class="address">
 						   <span>Cheick Ba</span><br>
-						   <span>NPT Lab</span><br>
+						   <span>CONNETS Lab</span><br>
                      		<span>cheick.ba at unimi.it</span>
 					   </p>
 
@@ -128,7 +160,14 @@
 
                <div class="columns download">
                   <p>
-                     <a href="docs/cv/cv.pdf" class="button"><i class="fa fa-download"></i>Download CV</a>
+                     <a href="docs/cv/Ba_cv.pdf" class="button">
+                        <i class="fa fa-download"></i>
+                        <span lang="it">Scarica CV compatto (INGLESE) </span><span lang="en">Download CV 2 pages (ENG)</span> 
+                     </a>
+                     <a href="docs/cv/cv.pdf" class="button">
+                        <i class="fa fa-download"></i>
+                        <span lang="it"> Scarica CV esteso (ITA)</span><span lang="en">Download Extended CV (Italian)</span> 
+                     </a>
                   </p>
                </div>
 
@@ -151,24 +190,73 @@
       <div class="row work">
 
          <div class="three columns header-col">
-            <h1><span>WORK</span></h1>
+            <h1><span lang="it">ESPERIENZE</span><span lang="en">WORK</span> </h1>
          </div>
 
          <div class="nine columns main-col">
 
-         	            <div class="row item">
+            <div class="row item">
 
                <div class="twelve columns">
 
-                  <h3>PHD in Informatica</h3>
-                  <p class="info"><span>&bull;</span> <em class="date">Ottobre 2020 – Presente</em></p>
-					<p class="info"> Dipartimento di Informatica - Università degli Studi di Milano
+                  <h3><span lang="it">PHD in Informatica</span><span lang="en">Ph.D. student in Computer science</span> </h3>
+                  <p class="info">
+                     <span>&bull;</span> 
+                     <em class="date">
+                        <span lang="it">Nov 2020 – Presente</span>
+                        <span lang="en">Nov. 2020 – Now</span>
+                     </em>
+                  </p>
+   					<p class="info"> 
+                     <span lang="it">Dipartimento di Informatica - Università degli Studi di Milano Statale</span>
+                     <span lang="en">Computer Science department - Università degli Studi di Milano Statale</span> 
+                  </p>
+                  <p>			
+   					<span lang="it">                  
+                     Settore: Temporal network modeling and mining
+                     <br>
+                     Supervisore: Prof. Sabrina Gaito<br></span>
+                  <span lang="en">
+                     Temporal network modeling and mining
+                     <br>
+                     Supervisor: Professor Sabrina Gaito<br>
+                  </span>
+		
+               </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>
+                     <span lang="it">ASSEGNISTA DI RICERCA (tipo B)</span>
+                     <span lang="en">Research assistant (type B)</span> 
+                  </h3>
+                  <p class="info">
+                     <span>&bull;</span> 
+                     <em class="date">
+                        <span lang="it">Maggio 2020 – Nov 2020</span>
+                        <span lang="en">May 2020 – Nov. 2020</span>
+                     </em>
+                  </p>
+                  <p class="info">		
+                     <span lang="it">Dipartimento di Informatica - Università degli Studi di Milano</span>
+                     <span lang="en">Computer Science department - Università degli Studi di Milano Statale</span>
+                  </p>
                   <p>
-			
-					Settore: Temporal network modeling and mining
-					<br>
-					Supervisore: Prof. Sabrina Gaito<br>
-					
+			            <span lang="it">
+                        Progetto VASARI (VAlorizzazione Smart del patrimonio Artistico delle città Italiane)<br>
+                        Supervisore: Prof. Gian Paolo Rossi<br>
+                        Settore: Interaction network modeling, big data management, network analysis
+                     </span>
+                     <span lang="en">
+                        Supervisor: Prof. Gian Paolo Rossi (CONNETS lab, ex NPTLab)
+                     </span>
                   </p>
 
                </div>
@@ -180,117 +268,186 @@
 
                <div class="twelve columns">
 
-                  <h3>ASSEGNISTA DI RICERCA (tipo B)</h3>
-                  <p class="info"><span>&bull;</span> <em class="date">Maggio 2020 – Ottobre 2020</em></p>
-<p class="info">		Dipartimento di Informatica - Università degli Studi di Milano
+                  <h3><span lang="it">ESERCITATORE – ATTIVITA’ DIDATTICA INTEGRATIVA</span><span lang="en">Teaching assistant</span> </h3>
+                  <p class="info">
+                     <span>&bull;</span> 
+                     <em class="date">
+                        <span lang="it">Settembre 2020 – Dicembre 2020</span>
+                        <span lang="en">Sept. 2020 – Dec. 2020 </span>  
+                     </em>
+                  </p>
+                  <p class="info">
+                     <span lang="it">Dipartimento di Economia, Management e Metodi Quantitativi - Università degli Studi di Milano, Milano (Italia) </span>
+                     <span lang="en">Master degree Data Science and Economics at Department of Economics, Management, and Quantitative Methods - Università Degli Studi di Milano Statale</span>
+                  </p>
+                     
                   <p>
-			
-					
-					Progetto VASARI (VAlorizzazione Smart del patrimonio Artistico delle città Italiane)<br>
-					Supervisore: Prof. Gian Paolo Rossi<br>
-					Settore: Interaction network modeling, big data management, network analysis
+                     <span lang="it"> 
+                        Corso di Social Network Analysis - Corso di laurea magistrale in Data Science and Economics <br>
+                        Responsabile del corso: Prof.ssa Sabrina Gaito <br>
+                        Settore: Network analysis, Social Media Mining
+                     </span>
+                     <span lang="en">
+                        Practice lecture: graph analysis and visualization with Python,
+                        networkx, Gephi. Theoretical lessons: data retrieval, crawling
+                        systems.
+                     </span>
+                 
                   </p>
 
                </div>
 
             </div> <!-- item end -->
-
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>ESERCITATORE – ATTIVITA’ DIDATTICA INTEGRATIVA </h3>
-                  <p class="info"><span>&bull;</span> <em class="date">Settembre 2020 – Dicembre 2020 </em></p>
-<p class="info"> Dipartimento di
-Economia, Management e Metodi Quantitativi - Università degli Studi di Milano, Milano
-(Italia) 
-                  <p>
-Corso di Social Network Analysis - Corso di laurea magistrale in Data Science and Economics <br>
-Responsabile del corso: Prof.ssa Sabrina Gaito <br>
-Settore: Network analysis, Social Media Mining
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-
-            
-
-            <!--
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> --> <!-- item end -->
 
          </div> <!-- main-col end -->
 
       </div> <!-- End Work -->
 
-
-      <!-- Skills
+      <!-- Education
       ----------------------------------------------- -->
-      
-      <div class="row skill education" id="pubbications" style="padding-top: 60px;">
-
+      <div class="row education">
 
          <div class="three columns header-col">
-            <h1><span>Pubblicazioni</span></h1>
+            <h1><span lang="it">Formazione</span><span lang="en">Education</span></h1>
          </div>
 
          <div class="nine columns main-col">
 
-            <h5> ARTICOLI IN RIVISTE INTERNAZIONALI</h5>
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>
+                     <span lang="it">Laurea Magistrale in Informatica -  110/110 e lode</span>
+                     <span lang="en">Master degree in Computer science - 110/110 cum laude</span>
+                  </h3> 
+                  <span>&bull;</span> 
+                  <em class="date"><span lang="it">Maggio 2020</span><span lang="en">May 2020</span></em>
+                  <p class="info">
+                     <span lang="it">Dipartimento di Informatica - Università degli Studi di Milano</span>
+                     <span lang="en">Computer Science department - Università degli Studi di Milano Statale</span>
+                  </p>
+
+                  <p>
+                     <span lang="it">
+                        Tesi discussa: “EVOLUTION OF A DECENTRALIZED ONLINE SOCIAL NETWORK”<br>
+                        Relatore: Prof.ssa Sabrina Tiziana Gaito<br>
+                        Correlatore: Dott. Matteo Zignani<br>                        
+                     </span>
+                     <span lang="en">
+                        Thesis: Evolution of a decentralized online social network <br>
+                        Supervised learning methods for link prediction a decentralized online social network. I improved prediction performance with a novel methodology, relying on text-based features (
+                        using LDA models for user similarity).
+                     </span>
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>
+                     <span lang="it">Laurea Triennale in Informatica per la comunicazione - 106/110</span>
+                     <span lang="en">Bachelor’s degree in Computer science for digital communication - 106/110</span>
+                  </h3>
+                  <span>&bull;</span> 
+                  <em class="date"><span lang="it">Ottobre 2018</span><span lang="en">October 2018</span></em>
+                  <p class="info"> 
+                     <span lang="it">Dipartimento di Informatica - Università degli Studi di Milano</span>
+                     <span lang="en">Computer Science department - Università degli Studi di Milano Statale</span>
+                  </p>
+                  <span lang="it">
+                     Tesi discussa: “SVILUPPO DI UNA LIBRERIA ANDROID PER IL CALCOLO DELLA POSIZIONE INDOOR, BASATO SU MARCATORI VISIVI, BLUETOOTH E SENSORI INERZIALI”<br>
+                     Relatore: Prof. Sergio Mascetti <br>
+                     Correlatore: Dott. Dragan Ahmetovic <br>
+                  </span>
+                  <span lang="en">
+                     Thesis: development of an Android library for indoor positioning, relying on visual markers, Bluetooth and inertial sensors. <br>
+                     Design and development of indoor positioning library in Java.<br>
+                     The library relies on data from the camera, inertial sensors, and Bluetooth beacons to locate a smartphone. The library was used in an Android application for indoor navigation
+                  </span>
+                
+            </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+   </section>
+
+   <section id="pubs">
+      <!-- Skills
+      ----------------------------------------------- -->
+      
+      <div class="row skill education">
+
+
+         <div class="three columns header-col">
+            <h1>
+               <span lang="it">Pubblicazioni</span>
+               <span lang="en">Publications</span>
+            </h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h5> 
+               <span lang="it">ARTICOLI IN RIVISTE INTERNAZIONALI</span>
+               <span lang="en">Articles in international journals </span>
+            </h5>
+   			<dl>
+   				 <dt><b>Multi-resolution visualization and analysis of biomolecular networks through hierarchical community detection and web-based graphical tools</b></dt>
+   		      	<dd> 
+   		      		 Perlasca P, Frasca M, Ba CT, Gliozzo J, Notaro M, Pennacchioni M, G.valentini e M. Mesiti
+   		      		<br> In: PLoS ONE 15(12): e0244241. (2020) https://doi.org/10.1371/journal.pone.0244241
+   				</dd>
+   			    <dt><b>	UNIPred-Web : a web tool for the integration and visualization of biomolecular networks for protein function prediction</b></dt>
+   		      	<dd> 
+   		      		P. Perlasca, M. Frasca, C.T. Ba, M. Notaro, A. Petrini, E. Casiraghi, G. Grossi, J. Gliozzo, G. Valentini, M. Mesiti.
+   		      		<br> In: BMC BIOINFORMATICS. – ISSN 1471-2105. - 20:1(2019 Aug 14), pp. 422.1-422.19.
+   				</dd>
+   				<dt><b>A Graphical Tool for the Exploration and Visual Analysis of Biomolecular Networks /</b></dt>
+   				<dd>
+   					C.T. Ba, E. Casiraghi, M. Frasca, J. Gliozzo, G. Grossi, M. Mesiti, M. Notaro, P. Perlasca, A. Petrini, M. Re', G.Valentini (LECTURE NOTES IN ARTIFICIAL INTELLIGENCE). 
+   					<br> In: Computational Intelligence methods for Bioinformatics and Biostatistics / [a cura di] M. Raposo, P. Ribeiro, S. Sério, A. Staiano, A. Ciaramella. - [s.l] : Springer, 2020. - ISBN 9783030345846. - pp. 88-98 <span lang="it">(Intervento presentato al 15. Convegno CIBB tenutosi a Caparica nel 2018 )</span><span lang="en"></span> .
+   				</dd>
+
+   				<dt><b>The effect of cryptocurrency price on a blockchain-based social network </b></dt>
+   					<dd>
+   						Ba C.T., Zignani M., Gaito S., Rossi G.P. <br> (2021) -  In: Benito R.M., Cherifi C., Cherifi H., Moro E., Rocha L.M., Sales-Pardo M. (eds) Complex Networks & Their Applications IX. COMPLEX NETWORKS 2020 2020. Studies in Computational Intelligence, vol 943. Springer, Cham. <a>https://doi.org/10.1007/978-3-030-65347-7_48</a>
+   						<br>
+   						<span lang="it">Presentato da me Giovedì 3 Dicembre 2020 - Sessione Oral O8A: Dynamics on/of Networks</span><span lang="en"> Presented by me on  Thursday, December 3rd 2020 Session Oral O8A: Dynamics on/of Networks</span>  
+   				</dd>
+   			</dl>
+
+   			<h5> 
+               <span lang="it">CONTRIBUTI SOGGETTI A PEER-REVIEW NON IN ATTI DI CONFERENZE/WORKSHOP</span>
+               <span lang="en">Peer-reviwed articles - unpublished</span>  
+            </h5>
+   			<dl>
+   				<dt><b>Triadic closure process in distributed online social networks</b></dt>
+   				<dd> 
+   					C.T. Ba, M. Zignani, S. Gaito and G. P. Rossi. (2019). Abstract for CompleNet 2020 (11th International Conference on Complex Networks) <br> 
+                  <span lang="it">(Accettato ma non presentato a causa dell’emergenza Covid-19)</span>
+                  <span lang="en">(Accepted but not presented because of the Covid-19 emergency)</span> 
+   				</dd>
+
+   			</dl>
+   			<h5>
+               <span lang="it">ARTICOLI IN REVISIONE</span>
+               <span lang="en">Articles under review / submitted </span> 
+            </h5>
+
 			<dl>
-				 <dt><b>Multi-resolution visualization and analysis of biomolecular networks through hierarchical community detection and web-based graphical tools</b></dt>
-		      	<dd> 
-		      		 Perlasca P, Frasca M, Ba CT, Gliozzo J, Notaro M, Pennacchioni M, G.valentini e M. Mesiti
-		      		<br> In: PLoS ONE 15(12): e0244241. (2020) https://doi.org/10.1371/journal.pone.0244241
-				</dd>
-			    <dt><b>	UNIPred-Web : a web tool for the integration and visualization of biomolecular networks for protein function prediction</b></dt>
-		      	<dd> 
-		      		P. Perlasca, M. Frasca, C.T. Ba, M. Notaro, A. Petrini, E. Casiraghi, G. Grossi, J. Gliozzo, G. Valentini, M. Mesiti.
-		      		<br> In: BMC BIOINFORMATICS. – ISSN 1471-2105. - 20:1(2019 Aug 14), pp. 422.1-422.19.
-				</dd>
-				<dt><b>A Graphical Tool for the Exploration and Visual Analysis of Biomolecular Networks /</b></dt>
-				<dd>
-					C.T. Ba, E. Casiraghi, M. Frasca, J. Gliozzo, G. Grossi, M. Mesiti, M. Notaro, P. Perlasca, A. Petrini, M. Re', G.Valentini (LECTURE NOTES IN ARTIFICIAL INTELLIGENCE). 
-					<br> In: Computational Intelligence methods for Bioinformatics and Biostatistics / [a cura di] M. Raposo, P. Ribeiro, S. Sério, A. Staiano, A. Ciaramella. - [s.l] : Springer, 2020. - ISBN 9783030345846. - pp. 88-98 (Intervento presentato al 15. Convegno CIBB tenutosi a Caparica nel 2018 ).
-				</dd>
-
-				<dt><b>The effect of cryptocurrency price on a blockchain-based social network </b></dt>
-					<dd>
-						Ba C.T., Zignani M., Gaito S., Rossi G.P. <br> (2021) -  In: Benito R.M., Cherifi C., Cherifi H., Moro E., Rocha L.M., Sales-Pardo M. (eds) Complex Networks & Their Applications IX. COMPLEX NETWORKS 2020 2020. Studies in Computational Intelligence, vol 943. Springer, Cham. <a>https://doi.org/10.1007/978-3-030-65347-7_48</a>
-						<br>
-						Presentato: Thursday, December 3rd 2020 Session Oral O8A: Dynamics on/of Networks
-				</dd>
-			</dl>
-
-			<h5> CONTRIBUTI SOGGETTI A PEER-REVIEW NON IN ATTI DI CONFERENZE/WORKSHOP </h5>
-			<dl>
-				<dt><b>Triadic closure process in distributed online social networks</b></dt>
-				<dd> 
-					C.T. Ba, M. Zignani, S. Gaito and G. P. Rossi. (2019). Abstract per CompleNet 2020 (11th International Conference on Complex Networks) <br> (Accettato ma non presentato a causa dell’emergenza Covid-19)
-				</dd>
-
-			</dl>
-			<h5>ARTICOLI IN REVISIONE</h5>
-
-			<dl>
+               <span lang="it">Al momento nessuno</span>
+               <span lang="en">Currently none</span>
 					<!--<dt><b>Multi-resolution visualization and analysis of biomolecularnetworks through hierarchical community detection and web-based graphical tools</b></dt>
 					<dd> 
 						Paolo Perlasca, Marco Frasca, Cheick Tidiane Ba, Jessica Gliozzo, Marco Notaro, Mario Pennacchioni, Giorgio Valentini, Marco Mesiti <br> (Sottomesso alla rivista PLOS-ONE)
@@ -309,60 +466,9 @@ Settore: Network analysis, Social Media Mining
 		</div> <!-- main-col end -->
 
      </div> <!-- End skills -->
-		
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
+  
 
-         <div class="three columns header-col">
-            <h1><span>Formazione</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Laurea Magistrale in Informatica  
-                  -  110/110 e lode</h3> 
-                  <span>&bull;</span> <em class="date">Maggio 2020</em>
-                  <p class="info">Dipartimento di Informatica - Università degli Studi di Milano</p>
-
-                  <p>
-					Tesi discussa: “EVOLUTION OF A DECENTRALIZED ONLINE SOCIAL NETWORK”<br>
-					Relatore: Prof.ssa Sabrina Tiziana Gaito<br>
-					Correlatore: Dott. Matteo Zignani<br>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Laurea Triennale in Informatica per la comunicazione - 106/110</h3>
-                  <span>&bull;</span> <em class="date">Ottobre 2018</em>
-                  <p class="info">Dipartimento di Informatica - Università degli Studi di Milano</p>
-
-                
-				Tesi discussa: “SVILUPPO DI UNA LIBRERIA ANDROID PER IL CALCOLO DELLA POSIZIONE 				INDOOR, BASATO SU MARCATORI VISIVI, BLUETOOTH E SENSORI INERZIALI”<br>
-				Relatore: Prof. Sergio Mascetti<br>
-				Correlatore: Dott. Dragan Ahmetovic
-				
-				</p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-</section> <!-- Resume Section End-->
+</section> <!-- Section End-->
 
 
    <!-- Portfolio Section
@@ -373,77 +479,220 @@ Settore: Network analysis, Social Media Mining
 
 	          <div class="eight columns add-bottom">
 
-	            <h3 class="add-bottom">Progetti</h3>
+	            <h3 class="add-bottom"> <span lang="it">Progetti</span><span lang="en">Projects</span></h3>
 
-	            <h5>Progetti in collaborazione con gruppi di ricerca</h5>
+	            <h5><span lang="it">Progetti in collaborazione con gruppi di ricerca</span><span lang="en">Projects with research groups</span></h5>
 
 	            <dl>
-				      <dt><b>VASARI</b></dt>
-					      <dd>Titolo del progetto: Progetto VASARI (VAlorizzazione Smart del patrimonio Artistico delle città Italiane) <br>
-Sviluppo per l’attività OR-4.3: interaction graph. <br>
-Supervisore: Prof. Gian Paolo Rossi <br>
-Periodo di collaborazione: Maggio 2020 – Presente <br><br>
-L’obiettivo di VASARI è quello di creare una piattaforma digitale unificante ed integrata di dati e servizi per la valorizzazione, fruizione e gestione del patrimonio artistico su una base sovra-museale. Il visitatore è al centro di uno spazio fisico/digitale la cui integrazione è assicurata dalla infrastruttura di sistema e di connettività in rete. <br>
-Attività svolte: Nell’ambito del progetto ho collaborato alla progettazione ed implementazione di modelli per l’interaction graph. Questo grafo delle interazioni modella le interazioni tra utenti, musei sul territorio e le opere visitate al loro interno. La modellazione delle attività di visita consente di migliorare e studiare percorsi di visita e migliorare l’esperienza degli utenti. La modellazione dei pattern di interazione è basata su reti temporali multidimensionali e implementata attraverso graph-oriented database. In particolare, è stato sviluppato un insieme di API basate sul data management system Neo4j. <br>
-Sito del progetto: <a href="http://www.vasariartexperience.it/">Link</a><br>
-</dd>
-				      <dt><b>Unipred-Web</b></dt>
-					      <dd> Titolo del progetto: Progetto Unipred-Web (Integrazione e predizione di reti biomolecolari e analisi visuale)<br>
-Supervisore: Prof. Marco Mesiti <br>
-Periodo di collaborazione: 2018 – Presente  <br><br>
-Design e sviluppo di una interfaccia web per l’integrazione reti di proteine di grandi dimensioni. Attività svolte: Visualizzazione e gestione delle reti. Web Design e developing, progettazione e sviluppo del database e delle API. Creazione e manutenzione dei servizi.  <br>
-Sito del tool: <a href="https://unipredweb.di.unimi.it">Link</a><br>
-</dd>
-				      <dt><b>BullAUT</b></dt>
-					      <dd>Titolo del progetto: Progetto Regione Lombardia su bando Bullout - Progetti per la prevenzione e il contrasto del bullismo e cyberbullismo anno scolastico 2018-2019 - in attuazione della DGR 539/2018 <br>
-Supervisore: Prof. Valtolina <br>
-Periodo di collaborazione:  2018-2019 <br><br>
 
-Il progetto “BullAUT” ha come obiettivo fondamentale quello di migliorare l’inclusione di studenti di scuola superiore affetti da disturbi dello spettro autistico allo scopo, ma non solo, di prevenire eventuali atti di bullismo. Il contributo specifico dell’unità UNIMI verte sulla progettazione partecipativa di un sistema interattivo volto alla creazione di contenuti video a supporto di studenti affetti da sindrome dello spettro autistico per l’identificazione di atti di bullismo nelle sue varie forme. Il risultato atteso da questa attività è quello di valutazione dell’accettabilità, accessibilità, usabilità e user experience del sistema introdotto direttamente in un istituto scolastico e testato quindi con i suoi potenziali utilizzatori. <br>
-Attività svolte: ho collaborato al team di progettazione e sviluppo del portale web del relativo DB.<br>
- </dd>
-			      </dl>
+                  <dt>
+                     <b>Methodologies for financial group data analysis</b>
+                  </dt>
+                  <dd>
+                     <span lang="it">Analisi del rischio</span>
+                     <span lang="en">Methodologies for financial group data analysis</span>
+                     <br>
+                     <span lang="it">
+                        Nuove metodologie per customer segmentation e analisi del rischio finanziario basato su analisi comportamentale<br>
+                        CONNETS Lab @ UNIMI
+                     </span>
+                     <span lang="en">
+                        Design of new methodologies for customer segmentation and behavioral-centric financial group risk analysis <br>
+                        CONNETS Lab @ UNIMI
+                     </span>
+                     
+                  </dd>
 
-	            <h5>Progetti universitari e personali</h5>
-				<dl>
-				     <dt><b>Twitter Sentiment Analyisis</b></dt>
-					      <dd> 
-Corso di Metodi Statistici per l’apprendimento<br><br>
-Classificazione sentiment di tweet on reti deep, convoluzionali e ricorrenti (LSTM, GRU).<br>
-Attività svolte: Progettazione e sviluppo di un classificatore del sentiment di tweet.  Utilizzo di reti neurali e framework keras e scikit-learn per l’addestramento dei modelli su un dataset Kaggle. Testing con modelli base classici e diverse architetture di reti neurali, tra cui reti convoluzionali e ricorrenti (LSTM, GRU). <br>
-Relazione: <a href="https://drive.google.com/file/d/1NsqMRSmrfdSKvb5UO5hKwHkDW4buYsRM/view"> Link</a> <br>
-</dd>
+				      <dt>
+                     <b>VASARI</b>
+                  </dt>
+				      <dd>
+                     <span lang="it">Titolo del progetto: Progetto VASARI (VAlorizzazione Smart del patrimonio Artistico delle città Italiane) </span>
+                     <span lang="en"></span>
+                     <br>
+                     <span lang="it">
+                     Sviluppo per l’attività OR-4.3: interaction graph. <br>
+                     Supervisore: Prof. Gian Paolo Rossi <br>
+                     Periodo di collaborazione: Maggio 2020 – Ottobre 2020 <br><br>
+                     L’obiettivo di VASARI è quello di creare una piattaforma digitale unificante ed integrata di dati e servizi per la valorizzazione, fruizione e gestione del patrimonio artistico su una base sovra-museale. Il visitatore è al centro di uno spazio fisico/digitale la cui integrazione è assicurata dalla infrastruttura di sistema e di connettività in rete. <br>
+                     Attività svolte: Nell’ambito del progetto ho collaborato alla progettazione ed implementazione di modelli per l’interaction graph. Questo grafo delle interazioni modella le interazioni tra utenti, musei sul territorio e le opere visitate al loro interno. La modellazione delle attività di visita consente di migliorare e studiare percorsi di visita e migliorare l’esperienza degli utenti. La modellazione dei pattern di interazione è basata su reti temporali multidimensionali e implementata attraverso graph-oriented database. In particolare, è stato sviluppato un insieme di API basate sul data management system Neo4j. <br>
+                     Sito del progetto: <a href="http://www.vasariartexperience.it/">Link</a><br>
+                     CONNETS Lab @ UNIMI <br>
+                     </span>
+                     <span lang="en">
+                        National project for art and museums<br>
+                        CONNETS Lab @ UNIMI <br>
+                        <a href="http://www.vasariartexperience.it/">Link</a><br> 
+                     </span>
+                     
+                  </dd>
+				      <dt>
+                     <b>Unipred-Web</b>
+                  </dt>
+				      <dd> 
+                     <span lang="it">
+                        Titolo del progetto: Progetto Unipred-Web (Integrazione e predizione di reti biomolecolari e analisi visuale)
+                     </span>
+                     <span lang="en">
+                        
+                     </span>
+                     <br>
+                     <span lang="it">
+                        Supervisore: Prof. Marco Mesiti <br>
+                        Periodo di collaborazione: 2018 – Presente  <br><br>
+                        Design e sviluppo di una interfaccia web per l’integrazione reti di proteine di grandi dimensioni. Attività svolte: Visualizzazione e gestione delle reti. Web Design e developing, progettazione e sviluppo del database e delle API. Creazione e manutenzione dei servizi.  <br>
+                        Sito del tool: <a href="https://unipredweb.di.unimi.it">Link</a><br>
+                        ANACLETO Lab @ UNIMI <br>
+                     </span>
+                     <span lang="en">
+                        Design and development of a web interface for the integration
+                        and prediction of bio-molecular networks. I helped with web
+                        UI and database design and development, APIs.<br>
+                        ANACLETO Lab @ UNIMI <br>
+                     </span>
 
-<dt><b>LEGO AR Tools</b></dt>
-					      <dd> Corso di Sviluppo di applicazioni per dispositivi mobili<br><br>
-Applicazione per la visualizzazione di istruzioni in realtà aumentata, XCode, Swift.<br>
-Attività svolte: progettazione e sviluppo di una applicazione basata sulla realtà aumentata per la visualizzazione di istruzioni in realtà aumentata. Progetto realizzato con Swift e XCode. Collaborazione con un altro studente, Federico Cozzi. <br>
-Sito di presentazione: <a href="https://federicocozzivm.github.io/Lego-AR-Tools-website/">Link</a> <br>
-</dd>
+                  </dd>
+				      <dt>
+                     <b>BullAUT</b>
+                  </dt>
+				      <dd>
+                     <span lang="it">
+                        Titolo del progetto: Progetto Regione Lombardia su bando Bullout - Progetti per la prevenzione e il contrasto del bullismo e cyberbullismo anno scolastico 2018-2019 - in attuazione della DGR 539/2018
+                     </span>
+                     <span lang="en"></span>  
+                     <br>
+                     <span lang="it">
+                        Supervisore: Prof. Valtolina <br>
+                        Periodo di collaborazione:  2018-2019 <br><br>
 
-<dt><b>La NBA su Youtube</b></dt>
-					      <dd> Corso di Social media Mining<br><br>
-Analisi commenti su Youtube. Estrazione dei dati, text mining, analisi della interaction network e sentiment analysis. Analisi dei commenti sulla piattaforma social di Youtube. <br>
-Attività svolte: Estrazione dei dati dalla social network, text mining, analisi dei dati e sentiment analysis. <br>
-Slides di presentazione:
-<a href="http://someni.di.unimi.it/progetti2017/Ba-Youtube.pdf">Link</a><br>
-</dd>
+                        Il progetto “BullAUT” ha come obiettivo fondamentale quello di migliorare l’inclusione di studenti di scuola superiore affetti da disturbi dello spettro autistico allo scopo, ma non solo, di prevenire eventuali atti di bullismo. Il contributo specifico dell’unità UNIMI verte sulla progettazione partecipativa di un sistema interattivo volto alla creazione di contenuti video a supporto di studenti affetti da sindrome dello spettro autistico per l’identificazione di atti di bullismo nelle sue varie forme. Il risultato atteso da questa attività è quello di valutazione dell’accettabilità, accessibilità, usabilità e user experience del sistema introdotto direttamente in un istituto scolastico e testato quindi con i suoi potenziali utilizzatori. <br>
+                        Attività svolte: ho collaborato al team di progettazione e sviluppo del portale web del relativo DB.<br>
+                        MIPS Lab @UNIMI <br>  
+                     </span>
+                     <span lang="en">
+                        Regional project against bullying. <br>
 
-<dt><b>Rumor Tracker</b></dt>
-  <dd> Corso di Information Retrieval<br><br>
-Implementazione di un sistema di rumor detection tra i post su Twitter. Rilevamento di argomenti e tweet rilevanti da uno stream di tweet.  <br>
-Attività svolte: text mining e classificazione con un dataset di Tweet. Clustering basato sui post degli utenti, valutazione di un sistema.<br>
-Relazione: <a href="https://drive.google.com/file/d/16tlKFNsgfkARhdkWhoUqPfW9-5LnFCNe/view">Link</a><br>
-</dd>
+                        Design and development of a website prototype for kid education.<br>
+                        MIPS Lab @UNIMI <br>
+                     </span>
+                        
 
-<dt><b>Pallavolo Cisano</b></dt>
-					      <dd> Web page per una squadra di pallavolo in Serie A2. <br><br>
-Design e sviluppo, gestione dei dati. Modifiche e personalizzazioni del sito tramite conoscenze HTML/CSS/JS. <br>Attività svolte: Design e sviluppo con WordPress. Gestione dei dati. Modifiche e personalizzazioni del sito tramite conoscenze HTML/CSS/JS. Realizzazione di grafiche con Adobe Photoshop ed Adobe Illustrator. Collaborazione gratuita. <br>
-Sito web realizzato:
-<a href="https://pallavolocisano.it">Link</a><br>
-</dd>
+                  </dd>
+		      </dl>
 
-			      </dl>
+            <h5><span lang="it">Progetti universitari e personali</span><span lang="en">Personal and university projects</span> </h5>
+			   <dl>
+			     <dt>
+                  <b>Twitter Sentiment Analyisis</b>
+               </dt>
+			      <dd> 
+                  <span lang="it">
+                     Corso di Metodi Statistici per l’apprendimento<br><br>
+                     Classificazione sentiment di tweet on reti deep, convoluzionali e ricorrenti (LSTM, GRU).<br>
+                     Attività svolte: Progettazione e sviluppo di un classificatore del sentiment di tweet.  Utilizzo di reti neurali e framework keras e scikit-learn per l’addestramento dei modelli su un dataset Kaggle. Testing con modelli base classici e diverse architetture di reti neurali, tra cui reti convoluzionali e ricorrenti (LSTM, GRU). <br>
+                     Relazione: <a href="https://drive.google.com/file/d/1NsqMRSmrfdSKvb5UO5hKwHkDW4buYsRM/view"> Link</a>  
+                  </span>
+                  <span lang="en">
+                     Classifier for sentiment in Tweets with different neural network
+                     architectures ( convolutional and recurrent LSTM/GRU
+                     with attention) and frameworks (Keras, scikit-learn) working
+                     on a Kaggle dataset
+                  </span>
+                  
+                  <br>
+               </dd>
+
+               <dt>
+                  <b>LEGO AR Tools</b>
+               </dt>
+			      <dd>
+                  <span lang="it">
+                     Corso di Sviluppo di applicazioni per dispositivi mobili<br><br>
+                     Applicazione per la visualizzazione di istruzioni in realtà aumentata, XCode, Swift.<br>
+                     Attività svolte: progettazione e sviluppo di una applicazione basata sulla realtà aumentata per la visualizzazione di istruzioni in realtà aumentata. Progetto realizzato con Swift e XCode. Collaborazione con un altro studente, Federico Cozzi. <br>
+                     Sito di presentazione: <a href="https://federicocozzivm.github.io/Lego-AR-Tools-website/">Link</a> <br>  
+                  </span>
+                  <span lang="en"></span>
+                  Development of an Augmented Reality App for the visualization
+                  of instructions for Lego models. The project was realized
+                  for iOS platforms. Collab. with another student.<br>
+                  Mock website: <a href="https://federicocozzivm.github.io/Lego-AR-Tools-website/">Link</a> 
+               </dd>
+
+               <dt>
+                  <b><span lang="it">La NBA su Youtube</span><span lang="en">The NBA on Youtube</span> </b>
+               </dt>
+			      <dd> 
+                  <span lang="it">
+                     Corso di Social media Mining<br><br>
+                     Analisi commenti su Youtube. Estrazione dei dati, text mining, analisi della interaction network e sentiment analysis. Analisi dei commenti sulla piattaforma social di Youtube. <br>
+                     Attività svolte: Estrazione dei dati dalla social network, text mining, analisi dei dati e sentiment analysis. <br>
+                     Slides di presentazione:
+                     <a href="http://someni.di.unimi.it/progetti2017/Ba-Youtube.pdf">Link</a><br>
+                     </span>
+                  <span lang="en">
+                     Analysis of the interaction network for users commenting on
+                     the NBA’s Youtube account. Focus on interaction networks
+                     and sentiment analysis in comments.
+                  </span>
+                 
+               </dd>
+
+               <dt>
+                  <b>Rumor Tracker</b>
+               </dt>
+               <dd>
+                  <span lang="it">
+                     Corso di Information Retrieval<br><br>
+                     Implementazione di un sistema di rumor detection tra i post su Twitter. Rilevamento di argomenti e tweet rilevanti da uno stream di tweet.  <br>
+                     Attività svolte: text mining e classificazione con un dataset di Tweet. Clustering basato sui post degli utenti, valutazione di un sistema.<br>
+                     Relazione: <a href="https://drive.google.com/file/d/16tlKFNsgfkARhdkWhoUqPfW9-5LnFCNe/view">Link</a><br>
+                  </span>
+                  <span lang="en"></span>
+                     Rumor detection tool for Twitter posts. The tool implemented
+                     a clustering-based method for the extraction of topics from a
+                     stream of tweets.
+               </dd>
+
+               <dt>
+                  <b><span lang="it">Sistema distribuito per dati da sensori</span> <span lang="en">Distributed system for sensor data</span></b>
+               </dt>
+               <dd> 
+                  <span lang="it">
+                    Progetto per il corso di sistemi distribuiti e pervasivi.
+                    Sistema composto da un REST server, un client per ogni sensore e una interfaccia per amministratore.
+                    I client creano mesh network e si coordinano per aggregare i dati raccolti. I dati calcolati sono poi salvati su server, accessibili all'amministratore tramite l'apposita interfaccia.
+                  </span>
+                  <span lang="en">
+                     A system composed of a REST server, a client for each sensor,
+                     an admin UI.
+                     Clients create mesh networks and coordinate themselves to
+                     aggregate sensor data: the result is stored on the server, for
+                     admin monitoring.
+                  </span>
+                  
+                  <br>
+               </dd>
+
+               <dt>
+                  <b>Pallavolo Cisano</b>
+               </dt>
+			      <dd> 
+                  <span lang="it">
+                     Web page per una squadra di pallavolo in Serie A2. <br><br>
+                     Design e sviluppo, gestione dei dati. Modifiche e personalizzazioni del sito tramite conoscenze HTML/CSS/JS. <br>Attività svolte: Design e sviluppo con WordPress. Gestione dei dati. Modifiche e personalizzazioni del sito tramite conoscenze HTML/CSS/JS. Realizzazione di grafiche con Adobe Photoshop ed Adobe Illustrator. Collaborazione gratuita. <br>
+                     Sito web realizzato:
+                     <a href="https://pallavolocisano.it">Link</a><br>
+                  </span>
+                  <span lang="en">
+                     Web page for an italian Volleyball Club.<br>
+                     <a href="https://pallavolocisano.it">Link</a><br>
+                  </span>
+
+                 
+               </dd>
+
+		      </dl>
 
 	         </div>
 
@@ -533,7 +782,7 @@ Sito web realizzato:
             </ul>-->
 
             <ul class="copyright">
-               <li>&copy; Copyright 2020 Cheick Ba</li>
+               <li>&copy; Copyright 2021 Cheick Ba</li>
                <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
             </ul>
 
@@ -556,7 +805,7 @@ Sito web realizzato:
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-
+   <script src="js/main.js"></script>
 </body>
 
 </html>

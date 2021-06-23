@@ -1,3 +1,61 @@
 dt{
 	margin-top: 30px;
 }
+
+
+.buttonMenu{
+	background-color: #444;
+}
+
+.buttonMenu:hover{
+	background-color: #11ABB0;
+}
+
+.pubs{
+    background: #fff;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    overflow: hidden;
+}
+
+
+#pubs {
+   background: #f8f8f8;/*#fff;*/
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#pubs a, #pubs a:visited  { color: #11ABB0; }
+#pubs a:hover, #pubs a:focus { color: #313131; }
+
+#pubs h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#pubs h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#pubs h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#pubs .header-col { padding-top: 9px; }
+#pubs .main-col { padding-right: 10%; }
+
+#pubs .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#pubs .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#pubs .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
