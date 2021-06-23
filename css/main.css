@@ -4,7 +4,9 @@ dt{
 
 
 .buttonMenu{
-	background-color: #444;
+	background-color: transparent;
+   padding: 10px 0px;
+   font: 12px 'opensans-bold', sans-serif;
 }
 
 .buttonMenu:hover{
