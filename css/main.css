@@ -2,7 +2,6 @@ dt{
 	margin-top: 30px;
 }
 
-
 .buttonMenu{
 	background-color: transparent;
    padding: 10px 0px;
@@ -19,7 +18,6 @@ dt{
     padding-bottom: 72px;
     overflow: hidden;
 }
-
 
 #pubs {
    background: #f8f8f8;/*#fff;*/
@@ -58,6 +56,55 @@ dt{
    margin-left: 5px;
 }
 #pubs .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+.projs{
+    background: #fff;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    overflow: hidden;
+}
+
+
+#projs {
+   background: #f8f8f8;/*#fff;*/
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#projs a, #projs a:visited  { color: #11ABB0; }
+#projs a:hover, #projs a:focus { color: #313131; }
+
+#projs h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#projs h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#projs h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#projs .header-col { padding-top: 9px; }
+#projs .main-col { padding-right: 10%; }
+
+#projs .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#projs .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#projs .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
