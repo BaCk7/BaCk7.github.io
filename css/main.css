@@ -4,13 +4,15 @@ dt{
 
 .buttonMenu{
 	background-color: transparent;
-   padding: 10px 0px;
+   padding: 10px 8px;
    font: 12px 'opensans-bold', sans-serif;
 }
 
 .buttonMenu:hover{
 	background-color: #0466c8;
 }
+.flag-sep { opacity: 0.35; margin: 0 4px; font-style: normal; }
+.flag-dim { opacity: 0.35; }
 
 .pubs{
     background: #fff;
@@ -109,9 +111,13 @@ dt{
    margin-top: 6px;
 }
 
-footer{
-    margin-bottom: 0px;
+footer {
+   margin-bottom: 0px;
+   background: #071b33;
+   color: #aaa;
 }
+footer a, footer a:visited { color: #aaa; }
+footer a:hover, footer a:focus { color: #fff; }
 
 /* About - light blue */
 #about { background: #eef5fd; }
@@ -131,6 +137,59 @@ footer{
 .about-social li { display: inline-block; margin-right: 18px; }
 .about-social li a { color: #0466c8; transition: color 0.2s ease; }
 .about-social li a:hover { color: #313131; }
+
+/* ------------------------------------------------------------------ */
+/* Publications — stats + link buttons
+/* ------------------------------------------------------------------ */
+
+.pub-stats {
+   display: flex;
+   gap: 40px;
+   margin-bottom: 36px;
+}
+.pub-stat {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.pub-stat-number {
+   font: 52px/1 'opensans-bold', sans-serif;
+   color: #0466c8;
+   letter-spacing: -2px;
+}
+.pub-stat-label {
+   font: 12px/20px 'opensans-regular', sans-serif;
+   color: #888;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   margin-top: 6px;
+}
+.pub-links-label {
+   font: 12px/24px 'opensans-regular', sans-serif;
+   color: #aaa;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   margin-bottom: 12px;
+}
+.pub-links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.pub-link {
+   display: inline-flex;
+   align-items: center;
+   gap: 6px;
+   padding: 7px 16px;
+   border: 1.5px solid #0466c8;
+   border-radius: 4px;
+   color: #0466c8;
+   font: 14px 'opensans-regular', sans-serif;
+   transition: background 0.2s ease, color 0.2s ease;
+   text-decoration: none;
+}
+.pub-link:visited { color: #0466c8; }
+.pub-link:hover { background: #0466c8; color: #fff !important; }
 
 /* ------------------------------------------------------------------ */
 /* Experience Section
@@ -339,4 +398,63 @@ footer{
 /* ------------------------------------------------------------------ */
 /* Skill Bar Animations (custom skills)
 /* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+/* Font override: Inter (sans) + Lora italic (serif accent)
+/* ------------------------------------------------------------------ */
+
+body, p, li, a, span, dt, dd, label, legend, button, input,
+h1, h2, h3, h4, h5, h6,
+.timeline-item h3, .timeline-org, .timeline-item p, .timeline-sub li,
+.pub-stat-number, .pub-stat-label, .pub-links-label, .pub-link,
+.skill-tag, .skill-category-group h4,
+.about-social li a,
+nav #nav li a,
+.responsive-headline, .banner-text h3 {
+   font-family: 'Inter', sans-serif !important;
+}
+
+/* Hero headline: heavier weight */
+.responsive-headline {
+   font-weight: 700 !important;
+   letter-spacing: -1px !important;
+}
+
+/* Section titles and item headings: bold */
+h1, h2, h3, h4,
+.timeline-item h3,
+#experience h1, #skills h1, #education h1, #pubs h1 {
+   font-weight: 700 !important;
+}
+
+/* Buttons and links: semibold */
+.button, .pub-link, .skill-tag, nav #nav li a, .buttonMenu {
+   font-weight: 600 !important;
+}
+
+/* Nav bar: bigger, bolder */
+#nav-wrap {
+   font-size: 14px !important;
+   font-weight: 700 !important;
+   letter-spacing: 1.5px !important;
+}
+ul#nav li a {
+   font-weight: 700 !important;
+}
+
+/* Body text: Inter Medium 16px for more visual weight */
+body {
+   font-size: 16px !important;
+   font-weight: 600 !important;
+}
+p, li, .timeline-org, .timeline-item p, .timeline-sub li, .pub-link {
+   font-weight: 600 !important;
+}
+
+.timeline-date,
+#pubs .info,
+blockquote p {
+   font-family: 'Lora', serif !important;
+   font-style: italic !important;
+}
 

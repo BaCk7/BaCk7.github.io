@@ -17,6 +17,9 @@
 
 	<!-- CSS
     ================================================== -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital@1&display=swap">
    <link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
@@ -54,8 +57,8 @@
             <li><a class="smoothscroll" href="#education"><span lang="it">Formazione</span><span lang="en">Education</span></a></li>
             <li><a class="smoothscroll" href="#pubs"><span lang="it">Pubblicazioni</span><span lang="en">Publications</span></a></li>
             <li>
-               <button class="buttonMenu" lang="en" onclick="changeLanguageButton('it')">VERSIONE ITALIANA<i class="it flag" style="padding-left: 7px;"></i></button>
-               <button class="buttonMenu" lang="it" onclick="changeLanguageButton('en')">ENGLISH VERSION<i class="uk flag" style="padding-left: 7px;"></i></button>
+               <button class="buttonMenu" lang="en" onclick="changeLanguageButton('it')" title="Switch to Italian"><i class="uk flag"></i><span class="flag-sep">/</span><i class="it flag flag-dim"></i></button>
+               <button class="buttonMenu" lang="it" onclick="changeLanguageButton('en')" title="Switch to English"><i class="uk flag flag-dim"></i><span class="flag-sep">/</span><i class="it flag"></i></button>
             </li>
          </ul>
 
@@ -303,17 +306,40 @@
 
          <div class="nine columns main-col">
 
-            <p style="margin-bottom: 18px;">
-               <span lang="en">23 peer-reviewed publications, including international journals and conferences (8 in Q1 journals).</span>
-               <span lang="it">23 pubblicazioni peer-reviewed, tra cui articoli in riviste internazionali e conferenze (8 in riviste Q1).</span>
-            </p>
+            <div class="pub-stats">
+               <div class="pub-stat">
+                  <span class="pub-stat-number">23</span>
+                  <span class="pub-stat-label">
+                     <span lang="en">publications</span>
+                     <span lang="it">pubblicazioni</span>
+                  </span>
+               </div>
+               <div class="pub-stat">
+                  <span class="pub-stat-number">8</span>
+                  <span class="pub-stat-label">
+                     <span lang="en">Q1 journals</span>
+                     <span lang="it">riviste Q1</span>
+                  </span>
+               </div>
+               <div class="pub-stat">
+                  <span class="pub-stat-number">20+</span>
+                  <span class="pub-stat-label">
+                     <span lang="en">conferences</span>
+                     <span lang="it">conferenze</span>
+                  </span>
+               </div>
+            </div>
 
-            <h5>
-               <p><a href="https://scholar.google.com/citations?user=xRpvJ78AAAAJ&hl=en">Google Scholar</a></p>
-               <p><a href="https://www.semanticscholar.org/author/Cheick-Tidiane-Ba/120429738">Semantic Scholar</a></p>
-               <p><a href="https://orcid.org/0000-0002-4035-7464">ORCID</a></p>
-               <p><a href="https://dblp.uni-trier.de/pid/247/1543.html">DBLP</a></p>
-            </h5>
+            <p class="pub-links-label">
+               <span lang="en">Full list on:</span>
+               <span lang="it">Lista completa su:</span>
+            </p>
+            <div class="pub-links">
+               <a href="https://scholar.google.com/citations?user=xRpvJ78AAAAJ&hl=en" class="pub-link" target="_blank"><i class="fa fa-graduation-cap"></i> Google Scholar</a>
+               <a href="https://www.semanticscholar.org/author/Cheick-Tidiane-Ba/120429738" class="pub-link" target="_blank">Semantic Scholar</a>
+               <a href="https://orcid.org/0000-0002-4035-7464" class="pub-link" target="_blank">ORCID</a>
+               <a href="https://dblp.uni-trier.de/pid/247/1543.html" class="pub-link" target="_blank">DBLP</a>
+            </div>
 
          </div>
 

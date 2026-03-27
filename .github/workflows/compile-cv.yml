@@ -36,3 +36,4 @@ jobs:
         with:
           commit_message: "ci: recompile CV PDFs"
           file_pattern: docs/cv/CV_Cheick_Ba_latest.pdf docs/cv/CV_Cheick_Ba_latest_IT.pdf
+          push_options: '--force-with-lease'
