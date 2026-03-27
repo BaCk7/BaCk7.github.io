@@ -14,38 +14,6 @@ dt{
 .flag-sep { opacity: 0.35; margin: 0 4px; font-style: normal; }
 .flag-dim { opacity: 0.35; }
 
-.pubs{
-    background: #fff;
-    /*padding-top: 90px;*/
-    padding-bottom: 72px;
-    overflow: hidden;
-}
-
-#pubs {
-   background: #fff;/*#f8f8f8;/*#fff;*/
-   /*padding-top: 90px;*/
-   padding-bottom: 72px;
-   overflow: hidden;
-}
-
-#pubs a, #pubs a:visited  { color: #0466c8; }
-#pubs a:hover, #pubs a:focus { color: #313131; }
-
-#pubs h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-}
-#pubs h1 span {
-   border-bottom: 3px solid #0466c8;
-   padding-bottom: 6px;
-}
-#pubs h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
-}
-
-#pubs .header-col { padding-top: 9px; }
-#pubs .main-col { padding-right: 10%; }
 
 #pubs .info {
    font: 16px/24px 'librebaskerville-italic', serif;
@@ -121,20 +89,62 @@ footer a:hover, footer a:focus { color: #fff; }
 
 /* About - light blue */
 #about { background: #eef5fd; }
-#about h2 { color: #313131; }
 #about p { color: #555; }
 #about a, #about a:visited { color: #0466c8; }
 #about a:hover, #about a:focus { color: #313131; }
-#about .download .button { background: #0466c8; color: #fff; }
-#about .download .button:hover { background: #313131; color: #fff; }
+.cv-download {
+   display: flex;
+   justify-content: center;
+   margin-top: 24px;
+}
+.cv-btn {
+   display: inline-flex;
+   align-items: center;
+   gap: 12px;
+   padding: 14px 36px;
+   background: #0466c8;
+   color: #fff !important;
+   border-radius: 6px;
+   font-family: 'Inter', sans-serif !important;
+   font-size: 15px;
+   font-weight: 700 !important;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   text-decoration: none;
+   box-shadow: 0 4px 14px rgba(4,102,200,0.3);
+   transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+.cv-btn i { font-size: 16px; }
+.cv-btn:hover {
+   background: #313131;
+   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+   transform: translateY(-1px);
+}
 
+.about-content {
+   text-align: center;
+}
+.about-content p {
+   max-width: 680px;
+   margin: 0 auto 24px;
+}
+.profile-pic {
+   width: 160px;
+   height: 160px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin: 0 auto 28px;
+   display: block;
+   border: 4px solid #fff;
+   box-shadow: 0 4px 20px rgba(4,102,200,0.15);
+}
 .about-social {
    list-style: none;
    padding: 0;
-   margin: 20px 0 0 0;
+   margin: 0 0 24px 0;
    font-size: 24px;
 }
-.about-social li { display: inline-block; margin-right: 18px; }
+.about-social li { display: inline-block; margin: 0 10px; }
 .about-social li a { color: #0466c8; transition: color 0.2s ease; }
 .about-social li a:hover { color: #313131; }
 
@@ -144,8 +154,9 @@ footer a:hover, footer a:focus { color: #fff; }
 
 .pub-stats {
    display: flex;
-   gap: 40px;
-   margin-bottom: 36px;
+   gap: 60px;
+   margin-bottom: 56px;
+   justify-content: center;
 }
 .pub-stat {
    display: flex;
@@ -153,38 +164,42 @@ footer a:hover, footer a:focus { color: #fff; }
    align-items: flex-start;
 }
 .pub-stat-number {
-   font: 52px/1 'opensans-bold', sans-serif;
+   font: 80px/1 'opensans-bold', sans-serif;
    color: #0466c8;
-   letter-spacing: -2px;
+   letter-spacing: -3px;
 }
 .pub-stat-label {
-   font: 12px/20px 'opensans-regular', sans-serif;
+   font: 13px/20px 'opensans-regular', sans-serif;
    color: #888;
    text-transform: uppercase;
    letter-spacing: 1.5px;
-   margin-top: 6px;
+   margin-top: 10px;
 }
 .pub-links-label {
    font: 12px/24px 'opensans-regular', sans-serif;
    color: #aaa;
    text-transform: uppercase;
    letter-spacing: 1.5px;
-   margin-bottom: 12px;
+   margin-bottom: 16px;
 }
 .pub-links {
    display: flex;
    flex-wrap: wrap;
-   gap: 10px;
+   gap: 12px;
+   justify-content: center;
+}
+.pub-links-label {
+   text-align: center;
 }
 .pub-link {
    display: inline-flex;
    align-items: center;
-   gap: 6px;
-   padding: 7px 16px;
+   gap: 8px;
+   padding: 10px 22px;
    border: 1.5px solid #0466c8;
    border-radius: 4px;
    color: #0466c8;
-   font: 14px 'opensans-regular', sans-serif;
+   font: 15px 'opensans-regular', sans-serif;
    transition: background 0.2s ease, color 0.2s ease;
    text-decoration: none;
 }
@@ -203,43 +218,20 @@ footer a:hover, footer a:focus { color: #fff; }
 }
 #experience a, #experience a:visited  { color: #0466c8; }
 #experience a:hover, #experience a:focus { color: #313131; }
-#experience h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-}
-#experience h1 span {
-   border-bottom: 3px solid #0466c8;
-   padding-bottom: 6px;
-}
-#experience .header-col { padding-top: 9px; }
-#experience .main-col { padding-right: 10%; }
 
 /* ------------------------------------------------------------------ */
 /* Skills Section (dark)
 /* ------------------------------------------------------------------ */
 
 #skills {
-   background: #0a2540;
+   background: #eef5fd;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
-#skills h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   color: #fff;
-}
-#skills h1 span {
-   border-bottom: 3px solid #0466c8;
-   padding-bottom: 6px;
-}
-#skills .header-col { padding-top: 9px; }
-#skills .main-col { padding-right: 10%; }
 
 /* Tag pills */
-.skill-tags { padding-top: 6px; }
+.skill-tags { padding-top: 6px; text-align: center; }
 
 .skill-category-group { margin-bottom: 36px; }
 .skill-category-group:last-child { margin-bottom: 0; }
@@ -248,16 +240,17 @@ footer a:hover, footer a:focus { color: #fff; }
    font: 11px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 2px;
-   color: rgba(255,255,255,0.45);
+   color: #888;
    margin-bottom: 14px;
    padding-bottom: 8px;
-   border-bottom: 1px solid rgba(255,255,255,0.1);
+   border-bottom: 1px solid #d0dce8;
 }
 
 .tags {
    display: flex;
    flex-wrap: wrap;
    gap: 10px;
+   justify-content: center;
 }
 
 .skill-tag {
@@ -265,12 +258,12 @@ footer a:hover, footer a:focus { color: #fff; }
    align-items: center;
    gap: 8px;
    padding: 8px 18px;
-   background: rgba(255,255,255,0.07);
-   border: 1px solid rgba(255,255,255,0.18);
+   background: rgba(4,102,200,0.07);
+   border: 1px solid rgba(4,102,200,0.25);
    border-radius: 24px;
-   color: #fff;
+   color: #313131;
    font: 14px 'opensans-regular', sans-serif;
-   transition: background 0.2s ease, border-color 0.2s ease;
+   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 .skill-tag i {
    font-size: 17px;
@@ -279,6 +272,7 @@ footer a:hover, footer a:focus { color: #fff; }
 .skill-tag:hover {
    background: #0466c8;
    border-color: #0466c8;
+   color: #fff;
 }
 
 /* ------------------------------------------------------------------ */
@@ -293,17 +287,6 @@ footer a:hover, footer a:focus { color: #fff; }
 }
 #education a, #education a:visited  { color: #0466c8; }
 #education a:hover, #education a:focus { color: #313131; }
-#education h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-}
-#education h1 span {
-   border-bottom: 3px solid #0466c8;
-   padding-bottom: 6px;
-}
-#education .header-col { padding-top: 9px; }
-#education .main-col { padding-right: 10%; }
 
 /* ------------------------------------------------------------------ */
 /* Publications Section (dark override)
@@ -312,15 +295,28 @@ footer a:hover, footer a:focus { color: #fff; }
 #pubs {
    background: #fff;
    padding-top: 90px;
-   padding-bottom: 72px;
+   padding-bottom: 300px;
    overflow: hidden;
 }
 #pubs a, #pubs a:visited  { color: #0466c8; }
 #pubs a:hover, #pubs a:focus { color: #313131; }
-#pubs h1 { color: #313131; }
-#pubs h1 span { border-bottom: 3px solid #0466c8; padding-bottom: 6px; }
 #pubs h5 { color: #555; }
 #pubs p { color: #555; }
+
+/* ------------------------------------------------------------------ */
+/* Section Titles (full-width)
+/* ------------------------------------------------------------------ */
+
+.section-title {
+   font: 28px/36px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: #313131;
+   margin-bottom: 36px;
+   padding-bottom: 14px;
+   border-bottom: 3px solid #0466c8;
+   text-align: center;
+}
 
 /* ------------------------------------------------------------------ */
 /* Timeline
@@ -330,6 +326,8 @@ footer a:hover, footer a:focus { color: #fff; }
    position: relative;
    padding: 0;
    list-style: none;
+   max-width: 640px;
+   margin: 0 auto;
 }
 .timeline::before {
    content: '';
