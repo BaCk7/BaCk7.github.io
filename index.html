@@ -23,6 +23,7 @@
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/flags.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
 
    <!-- Script
    ================================================== -->
@@ -30,7 +31,7 @@
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+	<link rel="shortcut icon" href="favicon.png">
 
 </head>
 
@@ -38,52 +39,45 @@
 
    <!-- Header
    ================================================== -->
-   
-   <header id="home" style="background: none;">
-	
+   <header id="home" style="background: #071b33;">
+
       <nav id="nav-wrap">
 
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about"><span lang="it">Chi sono </span><span lang="en">About</span></a></li>
-            <li><a class="smoothscroll" href="#pubs"><span lang="it">Pubblicazioni</span><span lang="en">Publications</span>  </a></li>
-
+            <li><a class="smoothscroll" href="#about"><span lang="it">Chi sono</span><span lang="en">About</span></a></li>
+            <li><a class="smoothscroll" href="#experience"><span lang="it">Esperienza</span><span lang="en">Experience</span></a></li>
+            <li><a class="smoothscroll" href="#skills"><span lang="it">Competenze</span><span lang="en">Skills</span></a></li>
+            <li><a class="smoothscroll" href="#education"><span lang="it">Formazione</span><span lang="en">Education</span></a></li>
+            <li><a class="smoothscroll" href="#pubs"><span lang="it">Pubblicazioni</span><span lang="en">Publications</span></a></li>
             <li>
-               <button class="buttonMenu" lang="en" onclick="changeLanguageButton('it')">VERSIONE ITALIANA<i class="it flag" style="padding-left: 7px;"></i> </button>
-               <button class="buttonMenu" lang="it" onclick="changeLanguageButton('en')">ENGLISH VERSION<i class="uk flag" style="padding-left: 7px;"></i> </button>    
+               <button class="buttonMenu" lang="en" onclick="changeLanguageButton('it')">VERSIONE ITALIANA<i class="it flag" style="padding-left: 7px;"></i></button>
+               <button class="buttonMenu" lang="it" onclick="changeLanguageButton('en')">ENGLISH VERSION<i class="uk flag" style="padding-left: 7px;"></i></button>
             </li>
-            
-         </ul> <!-- end #nav -->
+         </ul>
 
       </nav> <!-- end #nav-wrap -->
-	
-	<div id="particles-js" style="position: absolute; width: 100%; height:100%; z-index: 1; background-color: none; top:0;"></div>
-	<script src="js/particles.js"></script>
-	<script src="js/app.js"></script>
+
+      <div id="particles-js" style="position: absolute; width: 100%; height:100%; z-index: 1; background-color: none; top:0;"></div>
+      <script src="js/particles.js"></script>
+      <script src="js/app.js"></script>
 
       <div class="row banner">
          <div class="banner-text">
-               <h1 class="responsive-headline"> <span lang="it">Ciao, sono Cheick.</span><span lang="en"> Hi, I'm Cheick.</span></h1>
-               <span lang="it">
-
-                  <h3>Sono un <span> ricercatore postdoc in Informatica</span>, <br> interessato a <span>Data Science</span>, <span>Network Analysis</span> e <span>Web Design</span>. </h3>
-               </span>
-
-               <span lang="en">
-                  <h3>I'm a <span> Postdoctoral researcher in Computer Science </span>, interested in <span>data science</span>, <span>network analysis</span> and <span>web design</span>.</h3>
-               </span>
-
+            <h1 class="responsive-headline">
+               <span lang="it">Ciao, sono Cheick.</span>
+               <span lang="en">Hi, I'm Cheick.</span>
+            </h1>
+            <span lang="en">
+               <h3>I'm a <span>Data Scientist</span>, working at the intersection of <span>temporal networks</span>, <span>machine learning</span> and <span>AI</span>.</h3>
+            </span>
+            <span lang="it">
+               <h3>Sono un <span>Data Scientist</span>, mi occupo di <span>reti temporali</span>, <span>machine learning</span> e <span>intelligenza artificiale</span>.</h3>
+            </span>
             <hr/>
-            <ul class="social">
-               <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-               <!--<li><a href="google.com"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-               <!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
-               <!--<li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-            </ul>
          </div>
       </div>
 
@@ -97,59 +91,48 @@
       <div class="row">
 
          <div class="three columns" style="min-height: 350px;">
-
-            <img class="profile-pic"  src="images/profile.jpg" alt="profile picture"  style="width: 300px; height: auto; display: block" />
-
+            <img class="profile-pic" src="images/profile.jpg" alt="profile picture" style="width: 300px; height: auto; display: block" />
          </div>
 
          <div class="nine columns main-col">
 
-            <h2><span lang="it">Chi sono</span><span lang="en"> About me</span></h2>
+            <h2><span lang="it">Chi sono</span><span lang="en">About me</span></h2>
 
             <p>
-               <span lang="it"> 
-               Sono un ricercatore postdoc presso la Queen Mary University of London. <br>
-               Ho conseguito il mio dottorato in Informatica presso Università degli studi Milano. <br>
-            	La mia attività di ricerca svolta durante gli studi ha portato a diverse pubblicazioni, principalmente in campo Big data, Network Analysis, Bioinformatica. <br>
-            	Ho esperienza nella didattica maturata come esercitatore, tutor e attività di volontariato (aiuto studio).
-               </span>
-
                <span lang="en">
-               Hardworking and people-oriented Postdoctoral Research at Queen Mary University of London.  <br>
-               I obtained my Ph.D. in Computer Science cum laude at Università degli studi di Milano Statale.<br>
-               Research and programming activities have led to several
-               projects and publications, mainly in the fields of big data
-               analysis, network analysis, bioinformatics and IT for Good.<br>
-               My experience as a teaching assistant, private tutor and
-               volunteer developed my teaching and training skills.</span>
+               Data Scientist at <a href="https://www.pometry.com/" target="_blank">Pometry Ltd.</a> (London), working on large-scale analysis of temporal networks and graph algorithms.
+               I hold a PhD in Computer Science (cum laude, Doctor Europaeus) from the University of Milan.
+               I have contributed to 23 peer-reviewed publications on network science, blockchain analysis, and machine learning on graphs.
+               </span>
+               <span lang="it">
+               Data Scientist presso <a href="https://www.pometry.com/" target="_blank">Pometry Ltd.</a> (Londra), mi occupo di analisi su larga scala di reti temporali e algoritmi su grafi.
+               Ho conseguito il dottorato in Informatica (cum laude, Doctor Europaeus) presso l'Università degli Studi di Milano.
+               Ho contribuito a 23 pubblicazioni peer-reviewed su network science, blockchain e machine learning su grafi.
+               </span>
             </p>
+
+            <ul class="about-social">
+               <li><a href="https://www.linkedin.com/in/cheickba7/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="mailto:cheick.ba@outlook.com"><i class="fa fa-envelope"></i></a></li>
+               <li><a href="https://scholar.google.com/citations?user=xRpvJ78AAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap"></i></a></li>
+            </ul>
 
             <div class="row">
 
-               <div class="columns contact-details">
-
-                  <h2><span lang="it">Contatti</span><span lang="en"></span></h2>
-                  <p class="address">
-						   <!--<span>Cheick Ba</span><br>-->
-                     <span>QMUL networks research group (<a href="https://networks.eecs.qmul.ac.uk/">Website</a>)</span><br>
-						   <span>Prev: CONNETS Lab (<a href="https://connets.di.unimi.it/">Website</a>)</span><br>
-                     <span>c.ba at qmul.ac..uk, cheick.ba at unimi.it</span>
-					   </p>
-
-               </div>
-
                <div class="columns download">
                   <p>
-                     <a href="docs/cv/CV_Cheick_Ba_28_04_2024.pdf" class="button">
+                     <a lang="en" href="docs/cv/CV_Cheick_Ba_latest.pdf" class="button">
                         <i class="fa fa-download"></i>
-                        <span lang="it">Scarica CV (LINGUA INGLESE) </span><span lang="en">Download CV (ENGLISH)</span> 
+                        Download CV
                      </a>
-                     <!--<a href="docs/cv/CV_Cheick_Ba.pdf" class="button">
+                     <a lang="it" href="docs/cv/CV_Cheick_Ba_latest_IT.pdf" class="button">
                         <i class="fa fa-download"></i>
-                        <span lang="it"> Scarica CV (ITA)</span><span lang="en">Download CV (ITA)</span> 
-                     </a>-->
+                        Scarica CV
+                     </a>
                   </p>
                </div>
+
+               </div> <!-- end download -->
 
             </div> <!-- end row -->
 
@@ -157,51 +140,185 @@
 
       </div>
 
-   </section> <!-- About Section End-->
+   </section> <!-- About Section End -->
 
-<!-- Resume Section
+
+   <!-- Experience Section
    ================================================== -->
-   <section id="resume">
+   <section id="experience">
 
-      <!-- Skills
-      ----------------------------------------------- -->
-      
-      <div class="row pubs" id="pubs">
-
+      <div class="row">
 
          <div class="three columns header-col">
-            <h1>
-               <span lang="it">Pubblicazioni</span>
-               <span lang="en">Publications</span>
-            </h1>
+            <h1><span><span lang="en">Experience</span><span lang="it">Esperienza</span></span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <ul class="timeline">
+
+               <li class="timeline-item">
+                  <span class="timeline-date"><span lang="en">Nov 2024 – Present</span><span lang="it">Nov 2024 – Oggi</span></span>
+                  <h3>Data Scientist</h3>
+                  <span class="timeline-org"><a href="https://www.pometry.com/" target="_blank">Pometry Ltd.</a> · London, UK</span>
+                  <p>
+                     <span lang="en">Large-scale data analysis with temporal networks, graph algorithms, and data visualisation.</span>
+                     <span lang="it">Analisi su larga scala con reti temporali, algoritmi su grafi e visualizzazione dei dati.</span>
+                  </p>
+               </li>
+
+               <li class="timeline-item">
+                  <span class="timeline-date">Nov 2023 – Nov 2024</span>
+                  <h3><span lang="en">Postdoctoral Research Assistant</span><span lang="it">Ricercatore Postdoc</span></h3>
+                  <span class="timeline-org"><a href="https://networks.eecs.qmul.ac.uk/" target="_blank">Queen Mary University of London</a> · London, UK</span>
+                  <p>
+                     <span lang="en">Cross-chain analysis using multilayer temporal networks with the Networks Research Group.</span>
+                     <span lang="it">Analisi cross-chain con reti temporali multidimensionali nel Networks Research Group.</span>
+                  </p>
+               </li>
+
+               <li class="timeline-item">
+                  <span class="timeline-date">Nov 2020 – Jan 2024</span>
+                  <h3><span lang="en">PhD Researcher</span><span lang="it">Dottorando di Ricerca</span></h3>
+                  <span class="timeline-org"><a href="https://connets.di.unimi.it/" target="_blank">CONNETS Lab, University of Milan</a> · Milan, Italy</span>
+                  <p>
+                     <span lang="en">Research on temporal multilayer networks, blockchain analysis, and machine learning on graphs. Led the research line on temporal networks and blockchains within the lab.</span>
+                     <span lang="it">Ricerca su reti temporali multidimensionali, analisi blockchain e machine learning su grafi. Responsabile della linea di ricerca su reti temporali e blockchain nel laboratorio.</span>
+                  </p>
+               </li>
+
+               <li class="timeline-item">
+                  <span class="timeline-date">May 2020 – Nov 2020</span>
+                  <h3><span lang="en">Research Assistant</span><span lang="it">Assegnista di Ricerca</span></h3>
+                  <span class="timeline-org"><a href="https://connets.di.unimi.it/" target="_blank">University of Milan</a> · Milan, Italy</span>
+                  <p>
+                     <span lang="en">Customer segmentation and risk analysis for an Italian financial group. Project VASARI.</span>
+                     <span lang="it">Segmentazione clienti e analisi del rischio per un gruppo finanziario italiano. Progetto VASARI.</span>
+                  </p>
+               </li>
+
+            </ul>
+         </div>
+
+      </div>
+
+   </section> <!-- Experience Section End -->
+
+
+   <!-- Skills Section
+   ================================================== -->
+   <section id="skills">
+
+      <div class="row">
+
+         <div class="three columns header-col">
+            <h1><span><span lang="en">Skills</span><span lang="it">Competenze</span></span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="skill-tags">
+
+               <div class="skill-category-group">
+                  <h4>Languages</h4>
+                  <div class="tags">
+                     <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python</span>
+                     <span class="skill-tag"><i class="devicon-rust-original"></i> Rust</span>
+                     <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript / TypeScript</span>
+                  </div>
+               </div>
+
+               <div class="skill-category-group">
+                  <h4>Data &amp; AI</h4>
+                  <div class="tags">
+                     <span class="skill-tag"><i class="fa fa-share-alt"></i> Graph &amp; Network Analysis</span>
+                     <span class="skill-tag"><i class="fa fa-cogs"></i> Machine Learning &amp; AI</span>
+                     <span class="skill-tag"><i class="fa fa-bar-chart"></i> Data Visualisation</span>
+                     <span class="skill-tag"><i class="fa fa-database"></i> SQL / Spark</span>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+
+   </section> <!-- Skills Section End -->
+
+
+   <!-- Education Section
+   ================================================== -->
+   <section id="education">
+
+      <div class="row">
+
+         <div class="three columns header-col">
+            <h1><span><span lang="en">Education</span><span lang="it">Formazione</span></span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <ul class="timeline">
+
+               <li class="timeline-item">
+                  <span class="timeline-date">26 Jan 2024</span>
+                  <h3><span lang="en">PhD in Computer Science</span><span lang="it">Dottorato in Informatica</span></h3>
+                  <span class="timeline-org">Università degli Studi di Milano · Milan, Italy</span>
+                  <p>
+                     <span lang="en">Cum laude · Doctor Europaeus<br>Supervisors: Prof. Sabrina Gaito, Dr. Matteo Zignani</span>
+                     <span lang="it">Cum laude · Doctor Europaeus<br>Supervisori: Prof. Sabrina Gaito, Dr. Matteo Zignani</span>
+                  </p>
+                  <ul class="timeline-sub">
+                     <li>
+                        <span lang="en">Visiting PhD Student — Queen Mary University of London (May–Aug 2023)</span>
+                        <span lang="it">Visiting PhD Student — Queen Mary University of London (mag–ago 2023)</span>
+                     </li>
+                     <li>
+                        <span lang="en">Visiting PhD Student — CIRAD Montpellier (May–Aug 2022)</span>
+                        <span lang="it">Visiting PhD Student — CIRAD Montpellier (mag–ago 2022)</span>
+                     </li>
+                  </ul>
+               </li>
+
+               <li class="timeline-item">
+                  <span class="timeline-date">11 Mar 2020</span>
+                  <h3><span lang="en">Master's Degree in Computer Science</span><span lang="it">Laurea Magistrale in Informatica</span></h3>
+                  <span class="timeline-org">Università degli Studi di Milano · Milan, Italy</span>
+                  <p>110/110 cum laude</p>
+               </li>
+
+            </ul>
+         </div>
+
+      </div>
+
+   </section> <!-- Education Section End -->
+
+
+   <!-- Publications Section
+   ================================================== -->
+   <section id="pubs">
+      <div class="row">
+
+         <div class="three columns header-col">
+            <h1><span><span lang="it">Pubblicazioni</span><span lang="en">Publications</span></span></h1>
          </div>
 
          <div class="nine columns main-col">
 
-            <h5> 
-               <p>
-                  <span lang="it"> <a href="https://scholar.google.com/citations?user=xRpvJ78AAAAJ&hl=en">Google Scholar</a> </span>
-                  <span lang="en"><a href="https://scholar.google.com/citations?user=xRpvJ78AAAAJ&hl=en">Google Scholar</a> </span></span>
-               </p>
-               <p>
-                  <span lang="it"> <a href="https://www.semanticscholar.org/author/Cheick-Tidiane-Ba/120429738">Semantic Scholar</a> </span>
-                  <span lang="en"><a href="https://www.semanticscholar.org/author/Cheick-Tidiane-Ba/120429738">Semantic Scholar</a> </span></span>
-               </p>
-               <p>
-                  <span lang="it"> <a href="https://orcid.org/0000-0002-4035-7464">ORCID</a> </span>
-                  <span lang="en"><a href="https://orcid.org/0000-0002-4035-7464">ORCID</a> </span></span>
-               </p>
+            <p style="margin-bottom: 18px;">
+               <span lang="en">23 peer-reviewed publications, including international journals and conferences (8 in Q1 journals).</span>
+               <span lang="it">23 pubblicazioni peer-reviewed, tra cui articoli in riviste internazionali e conferenze (8 in riviste Q1).</span>
+            </p>
 
-               <p>
-                  <span lang="it"> <a href="https://dblp.uni-trier.de/pid/247/1543.html">DBLP</a> </span>
-                  <span lang="en"><a href="https://dblp.uni-trier.de/pid/247/1543.html">DBLP</a> </span></span>
-               </p>
+            <h5>
+               <p><a href="https://scholar.google.com/citations?user=xRpvJ78AAAAJ&hl=en">Google Scholar</a></p>
+               <p><a href="https://www.semanticscholar.org/author/Cheick-Tidiane-Ba/120429738">Semantic Scholar</a></p>
+               <p><a href="https://orcid.org/0000-0002-4035-7464">ORCID</a></p>
+               <p><a href="https://dblp.uni-trier.de/pid/247/1543.html">DBLP</a></p>
             </h5>
 
-      </div> <!-- main-col end -->
+         </div>
 
-     </div> <!-- End skills -->
-   </section>
+      </div>
+   </section> <!-- Publications Section End -->
 
 
    <!-- footer
@@ -211,23 +328,10 @@
       <div class="row">
 
          <div class="twelve columns">
-
-         	<!--
-            <ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>-->
-
             <ul class="copyright">
-               <li>&copy; Copyright 2021 Cheick Ba</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
+               <li>&copy; Copyright 2025 Cheick Ba</li>
+               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>
             </ul>
-
          </div>
 
          <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>

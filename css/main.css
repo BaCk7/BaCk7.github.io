@@ -9,7 +9,7 @@ dt{
 }
 
 .buttonMenu:hover{
-	background-color: #11ABB0;
+	background-color: #0466c8;
 }
 
 .pubs{
@@ -26,7 +26,7 @@ dt{
    overflow: hidden;
 }
 
-#pubs a, #pubs a:visited  { color: #11ABB0; }
+#pubs a, #pubs a:visited  { color: #0466c8; }
 #pubs a:hover, #pubs a:focus { color: #313131; }
 
 #pubs h1 {
@@ -35,7 +35,7 @@ dt{
    letter-spacing: 1px;
 }
 #pubs h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #0466c8;
    padding-bottom: 6px;
 }
 #pubs h3 {
@@ -75,7 +75,7 @@ dt{
    overflow: hidden;
 }
 
-#projs a, #projs a:visited  { color: #11ABB0; }
+#projs a, #projs a:visited  { color: #0466c8; }
 #projs a:hover, #projs a:focus { color: #313131; }
 
 #projs h1 {
@@ -84,7 +84,7 @@ dt{
    letter-spacing: 1px;
 }
 #projs h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #0466c8;
    padding-bottom: 6px;
 }
 #projs h3 {
@@ -112,3 +112,231 @@ dt{
 footer{
     margin-bottom: 0px;
 }
+
+/* About - light blue */
+#about { background: #eef5fd; }
+#about h2 { color: #313131; }
+#about p { color: #555; }
+#about a, #about a:visited { color: #0466c8; }
+#about a:hover, #about a:focus { color: #313131; }
+#about .download .button { background: #0466c8; color: #fff; }
+#about .download .button:hover { background: #313131; color: #fff; }
+
+.about-social {
+   list-style: none;
+   padding: 0;
+   margin: 20px 0 0 0;
+   font-size: 24px;
+}
+.about-social li { display: inline-block; margin-right: 18px; }
+.about-social li a { color: #0466c8; transition: color 0.2s ease; }
+.about-social li a:hover { color: #313131; }
+
+/* ------------------------------------------------------------------ */
+/* Experience Section
+/* ------------------------------------------------------------------ */
+
+#experience {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+#experience a, #experience a:visited  { color: #0466c8; }
+#experience a:hover, #experience a:focus { color: #313131; }
+#experience h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#experience h1 span {
+   border-bottom: 3px solid #0466c8;
+   padding-bottom: 6px;
+}
+#experience .header-col { padding-top: 9px; }
+#experience .main-col { padding-right: 10%; }
+
+/* ------------------------------------------------------------------ */
+/* Skills Section (dark)
+/* ------------------------------------------------------------------ */
+
+#skills {
+   background: #0a2540;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+#skills h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #fff;
+}
+#skills h1 span {
+   border-bottom: 3px solid #0466c8;
+   padding-bottom: 6px;
+}
+#skills .header-col { padding-top: 9px; }
+#skills .main-col { padding-right: 10%; }
+
+/* Tag pills */
+.skill-tags { padding-top: 6px; }
+
+.skill-category-group { margin-bottom: 36px; }
+.skill-category-group:last-child { margin-bottom: 0; }
+
+.skill-category-group h4 {
+   font: 11px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   color: rgba(255,255,255,0.45);
+   margin-bottom: 14px;
+   padding-bottom: 8px;
+   border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.skill-tag {
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   padding: 8px 18px;
+   background: rgba(255,255,255,0.07);
+   border: 1px solid rgba(255,255,255,0.18);
+   border-radius: 24px;
+   color: #fff;
+   font: 14px 'opensans-regular', sans-serif;
+   transition: background 0.2s ease, border-color 0.2s ease;
+}
+.skill-tag i {
+   font-size: 17px;
+   line-height: 1;
+}
+.skill-tag:hover {
+   background: #0466c8;
+   border-color: #0466c8;
+}
+
+/* ------------------------------------------------------------------ */
+/* Education Section
+/* ------------------------------------------------------------------ */
+
+#education {
+   background: #eef5fd;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+#education a, #education a:visited  { color: #0466c8; }
+#education a:hover, #education a:focus { color: #313131; }
+#education h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#education h1 span {
+   border-bottom: 3px solid #0466c8;
+   padding-bottom: 6px;
+}
+#education .header-col { padding-top: 9px; }
+#education .main-col { padding-right: 10%; }
+
+/* ------------------------------------------------------------------ */
+/* Publications Section (dark override)
+/* ------------------------------------------------------------------ */
+
+#pubs {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+#pubs a, #pubs a:visited  { color: #0466c8; }
+#pubs a:hover, #pubs a:focus { color: #313131; }
+#pubs h1 { color: #313131; }
+#pubs h1 span { border-bottom: 3px solid #0466c8; padding-bottom: 6px; }
+#pubs h5 { color: #555; }
+#pubs p { color: #555; }
+
+/* ------------------------------------------------------------------ */
+/* Timeline
+/* ------------------------------------------------------------------ */
+
+.timeline {
+   position: relative;
+   padding: 0;
+   list-style: none;
+}
+.timeline::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 8px;
+   bottom: 0;
+   width: 2px;
+   background: #c5def5;
+}
+.timeline-item {
+   position: relative;
+   padding-left: 28px;
+   margin-bottom: 40px;
+}
+.timeline-item::before {
+   content: '';
+   position: absolute;
+   left: -5px;
+   top: 8px;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: #0466c8;
+}
+.timeline-item h3 {
+   font: 17px/24px 'opensans-bold', sans-serif;
+   color: #313131;
+   margin-bottom: 3px;
+}
+.timeline-item .timeline-date {
+   display: block;
+   font: 13px/20px 'librebaskerville-italic', serif;
+   color: #0466c8;
+   margin-bottom: 5px;
+}
+.timeline-item .timeline-org {
+   display: block;
+   font: 15px/24px 'opensans-regular', sans-serif;
+   color: #6E7881;
+}
+.timeline-item p {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   color: #6E7881;
+   margin-top: 8px;
+}
+.timeline-sub {
+   margin-top: 10px;
+   padding-left: 0;
+   list-style: none;
+}
+.timeline-sub li {
+   font: 14px/22px 'opensans-regular', sans-serif;
+   color: #888;
+   padding-left: 18px;
+   position: relative;
+   margin-bottom: 4px;
+}
+.timeline-sub li::before {
+   content: '↳';
+   position: absolute;
+   left: 0;
+   color: #0466c8;
+}
+
+/* ------------------------------------------------------------------ */
+/* Skill Bar Animations (custom skills)
+/* ------------------------------------------------------------------ */
+
