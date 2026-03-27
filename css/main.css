@@ -403,6 +403,24 @@ footer a:hover, footer a:focus { color: #fff; }
 /* ------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------ */
+/* Mobile: Publications
+/* ------------------------------------------------------------------ */
+
+@media only screen and (max-width: 767px) {
+   .pub-stats {
+      gap: 24px;
+      flex-wrap: wrap;
+   }
+   .pub-stat-number {
+      font-size: 56px !important;
+   }
+   .pub-links {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+/* ------------------------------------------------------------------ */
 /* Font override: Inter (sans) + Lora italic (serif accent)
 /* ------------------------------------------------------------------ */
 
