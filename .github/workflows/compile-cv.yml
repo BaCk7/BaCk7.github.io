@@ -6,11 +6,23 @@ on:
     paths:
       - 'CV_Cheick_Ba/**'
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebase on latest master
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git fetch origin master
+          git rebase origin/master
 
       - name: Compile LaTeX (EN)
         uses: xu-cheng/latex-action@v3
@@ -36,4 +48,3 @@ jobs:
         with:
           commit_message: "ci: recompile CV PDFs"
           file_pattern: docs/cv/CV_Cheick_Ba_latest.pdf docs/cv/CV_Cheick_Ba_latest_IT.pdf
-          push_options: '--force-with-lease'
