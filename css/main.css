@@ -386,22 +386,45 @@ footer a:hover, footer a:focus { color: #fff; }
    margin-top: 8px;
 }
 .timeline-sub {
-   margin-top: 10px;
+   margin-top: 16px;
    padding-left: 0;
    list-style: none;
 }
 .timeline-sub li {
-   font: 14px/22px 'opensans-regular', sans-serif;
-   color: #888;
-   padding-left: 18px;
    position: relative;
-   margin-bottom: 4px;
+   padding-left: 22px;
+   margin-bottom: 20px;
 }
 .timeline-sub li::before {
    content: '↳';
    position: absolute;
    left: 0;
+   top: 0;
    color: #0466c8;
+   font-size: 16px;
+}
+.timeline-sub-date {
+   display: block;
+   font: 12px/18px 'librebaskerville-italic', serif;
+   color: #0466c8;
+   margin-bottom: 2px;
+}
+.timeline-sub-role {
+   display: block;
+   font: 15px/22px 'opensans-bold', sans-serif;
+   color: #313131;
+   margin-bottom: 1px;
+}
+.timeline-sub-org {
+   display: block;
+   font: 14px/20px 'opensans-regular', sans-serif;
+   color: #6E7881;
+   margin-bottom: 4px;
+}
+.timeline-sub-desc {
+   display: block;
+   font: 14px/22px 'opensans-regular', sans-serif;
+   color: #888;
 }
 
 /* ------------------------------------------------------------------ */
